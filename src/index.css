@@ -1,0 +1,26 @@
+@font-face {
+  src: url('fonts/static/Montserrat-Light.ttf');
+  font-family: MontSerrat-Light;
+}
+
+@font-face {
+  src: url('fonts/static/Montserrat-Medium.ttf');
+  font-family: MontSerrat-Medium;
+}
+
+@font-face {
+  src: url('fonts/static/Montserrat-Bold.ttf');
+  font-family: MontSerrat-Bold;
+}
+
+@font-face {
+  src: url('fonts/Montserrat-VariableFont_wght.ttf');
+  font-family: MontSerrat;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: MontSerrat;
+}

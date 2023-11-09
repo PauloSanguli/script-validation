@@ -1,0 +1,7 @@
+.fieldMessage{
+    height: 80%;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.587);
+    outline: none;
+    padding: 10px 10px;
+}
