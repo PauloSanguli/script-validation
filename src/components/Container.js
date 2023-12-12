@@ -1,5 +1,5 @@
 import styles from './Container.module.css'
-import UseValidator from './hook/UseValidator'
+import UseValidator from './useValidator/UseValidator'
 
 
 
