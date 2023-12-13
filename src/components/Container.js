@@ -1,9 +1,15 @@
 import styles from './Container.module.css'
 import UseValidator from './useValidator/UseValidator'
+import { useRef } from 'react'
 
 
 
 export default function Container () {
+
+    var exampleEvent = () => {
+             
+    }
+
     return (
         <div className={styles.container}>
             <header className={styles.containerHeader}>
@@ -18,7 +24,7 @@ export default function Container () {
                 </label>
             </aside>
             <footer className={styles.containerFooter}>
-                <button onClick={console.log("tester button")}>Submit message</button>
+                <button onClick={exampleEvent}>Submit message</button>
             </footer>
         </div>
     )
