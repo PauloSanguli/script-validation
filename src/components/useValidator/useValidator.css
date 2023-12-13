@@ -1,7 +1,7 @@
 .fieldMessage{
     height: 80%;
     border-radius: 5px;
-    border: 1px solid rgba(128, 128, 128, 0.587);
+    border: 2px solid rgba(47, 218, 67, 0.587);
     outline: none;
     padding: 10px 10px;
     transition: all .3s;
@@ -9,8 +9,8 @@
 .styled {
     height: 80%;
     border-radius: 5px;
-    border: 1px solid red;
-    box-shadow: 0 0 2px red;
+    border: 2px dashed #e64b4b;
+    box-shadow: 0 0 2px #e64b4b;
     outline: none;
     padding: 10px 10px;
     transition: all .3s;

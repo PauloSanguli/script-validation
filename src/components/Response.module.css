@@ -16,12 +16,13 @@
     align-items: center;
     justify-content: center;
     font-size: 120%;
+    overflow: auto;
+    padding: 0 10px;
     background-color: rgb(54, 206, 108);
     color: white;
     border-radius: 10px;
     /* opacity: 0.4; */
 }
-
 .containerResponse .responseButtons{
     width: 100%;
     height: 20%;

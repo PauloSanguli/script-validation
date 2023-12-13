@@ -14,10 +14,10 @@ export default function Container ({ textResponsed, textInsertedRef }) {
             textResponsed(inputRef.current.value)
         }else{
             inputRef.current.style.transition = "all .3s"
-            inputRef.current.style.boxShadow = "0 0 7px red"
+            inputRef.current.style.boxShadow = "0 0 6px #e64b4b"
             setTimeout(() => {
-                inputRef.current.style.boxShadow = "0 0 2px red"
-            }, 1000)
+                inputRef.current.style.boxShadow = null
+            }, 800)
         }
     }
 
@@ -40,4 +40,3 @@ export default function Container ({ textResponsed, textInsertedRef }) {
         </div>
     )
 }
-
