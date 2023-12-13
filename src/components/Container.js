@@ -7,9 +7,14 @@ import { useState, useRef } from 'react'
 export default function Container ({ textResponsed, textInsertedRef }) {
     const [response, setResponse] = useState(true)
     const buttonRef = useRef(null)
+    const inputRef = useRef(null)
 
     var setTextFiltered = () => {
-        
+        if(response){
+            textResponsed(inputRef.current.value)
+        }else{
+            inputRef.current.style.boxShadow = "0 0 10px red"
+        }
     }
 
     return (
@@ -22,7 +27,7 @@ export default function Container ({ textResponsed, textInsertedRef }) {
                 <p>Write the message</p>
                 <label>
                     <span>message</span>
-                    <UseValidator typeInput="text" placeholderInput="message stay here" response={setResponse} buttonRef={buttonRef}/>
+                    <UseValidator typeInput="text" reffer_={inputRef} placeholderInput="message stay here" response={setResponse} buttonRef={buttonRef}/>
                 </label>
             </aside>
             <footer className={styles.containerFooter}>
