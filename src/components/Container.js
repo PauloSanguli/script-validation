@@ -13,7 +13,11 @@ export default function Container ({ textResponsed, textInsertedRef }) {
         if(response){
             textResponsed(inputRef.current.value)
         }else{
-            inputRef.current.style.boxShadow = "0 0 10px red"
+            inputRef.current.style.transition = "all .3s"
+            inputRef.current.style.boxShadow = "0 0 7px red"
+            setTimeout(() => {
+                inputRef.current.style.boxShadow = "0 0 2px red"
+            }, 1000)
         }
     }
 
