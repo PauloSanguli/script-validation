@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <Container />
+      <Container textInsertedRef={textInsertedRef} textResponsed={setTextResponsed}/>
       <div className='containerIconArrowRight'>
         <p>
           <FaArrowRight />

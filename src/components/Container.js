@@ -1,13 +1,15 @@
 import styles from './Container.module.css'
 import UseValidator from './useValidator/UseValidator'
-import { useRef } from 'react'
+import { useState, useRef } from 'react'
 
 
 
-export default function Container () {
+export default function Container ({ textResponsed, textInsertedRef }) {
+    const [response, setResponse] = useState(true)
+    const buttonRef = useRef(null)
 
-    var exampleEvent = () => {
-             
+    var setTextFiltered = () => {
+        
     }
 
     return (
@@ -20,12 +22,13 @@ export default function Container () {
                 <p>Write the message</p>
                 <label>
                     <span>message</span>
-                    <UseValidator typeInput="text" placeholderInput="message stay here" />
+                    <UseValidator typeInput="text" placeholderInput="message stay here" response={setResponse} buttonRef={buttonRef}/>
                 </label>
             </aside>
             <footer className={styles.containerFooter}>
-                <button onClick={exampleEvent}>Submit message</button>
+                <button ref={buttonRef} onClick={setTextFiltered}>Submit message</button>
             </footer>
         </div>
     )
 }
+
